@@ -2,11 +2,11 @@
 
 This code book describes the various datasets/variables used in this project, as well as the processing required to create the resulting tidy data set.
 
-# Overview
+## Overview
 
 30 volunteers performed 6 different activities while wearing a smartphone. Smartphone captured various activity metrics.
 
-# Data files used
+## Data files used
 
 - features.txt: Names of the 561 features.
 
@@ -26,11 +26,11 @@ This code book describes the various datasets/variables used in this project, as
 
 More information about the files is available in README.txt. More information about the features is available in features_info.txt.
 
-# Data files not used in analysis
+## Data files not used in analysis
 
 Data in "Inertial Signals" folder is ignored.
 
-# Processing steps
+## Processing steps
 
 1. A correct working directory path is set.
 
