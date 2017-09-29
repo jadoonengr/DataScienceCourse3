@@ -28,7 +28,7 @@ combined_set['activity'] <- activities[combined_set[['activity']],'V2']
 combined_set <- combined_set[grep("std()|mean()|subject|activity",names(combined_set))]
 
 # TASK 5: Variable average for each activity/subject
-# As explained in the lecture, we do it using reshape2 melt function.
+# As explained in the lecture, we do it using reshape2 melt/dcast functions.
 library(reshape2)
 melted <- melt(combined_set,id=c("subject","activity"))
 tidy_set<-dcast(melted, subject+activity ~ variable, mean)
