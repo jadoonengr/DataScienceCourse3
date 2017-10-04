@@ -33,7 +33,7 @@ library(reshape2)
 melted <- melt(combined_set,id=c("subject","activity"))
 tidy_set<-dcast(melted, subject+activity ~ variable, mean)
 
-
+write.table(tidy_set, file = "tidy_set.txt", row.names = FALSE)
 
 
 
